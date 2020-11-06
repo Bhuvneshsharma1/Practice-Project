@@ -1,0 +1,277 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: 'lato', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-image: url(../Images/spa-green.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#333333;
+    cursor: pointer;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+h1, h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+/* Top Bar */
+.top-bar{
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px 0;
+}
+
+.top-bar li{
+    font-weight: bold;
+}
+
+.top-ul a{
+    color: #40840c;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.top-icon{
+    justify-self: flex-end;
+}
+
+.top-icon i{
+    margin-left: 5px;
+    padding-left: 5px;
+
+}
+
+/* Main-Navbar */
+
+.main-nav li{
+    display: inline;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.main-nav{
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.main-nav a{
+    font-size: large;
+    font-weight: bold;
+    color: #333333;
+}
+
+.main-nav a:hover{
+    border-bottom: 2px solid #333333;
+    padding-top: 5px;
+
+}
+
+/* Header-Image */
+
+.image{
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.699);
+    padding: 30px;
+}
+
+.image img{
+    width: 60%;
+}
+
+.header-img{
+    display: flex;
+    justify-content: center;
+    /* background-color: silver; */
+}
+
+/* Welcome Message */
+
+.Welcome{
+    margin: 35px 0;
+    background-color:rgba(255, 255, 255, 0.699);
+}
+
+.Welcome h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Raleway, Georgia, sans-serif;
+    color: #96188f;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    margin: 40px 0;
+}
+
+.Welcome img{
+    width: 40%;
+}
+
+.Welcome .image2{
+    display: flex;
+    justify-content: center;
+}
+
+.Welcome p{
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.approvels{
+    margin-bottom: 20px;
+}
+
+.Images-amta{
+    width: 50%;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.Images-amta img{
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 10%;
+}
+
+.Image-nhi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Image-nhi img{
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 10%;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgba(255, 255, 255, 0.699);
+    padding: 10px 0;
+    padding-bottom: 10px;
+}
+
+footer .share-BTN{
+    justify-self: flex-end;
+    margin-top: 15px;
+}
+
+.footer-btn a{
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    background-color: #96188f;
+    color: #ffffff;
+    border: 2px solid #96188f;
+    border-radius: 5%;
+}
+
+.footer-btn a:hover{
+    background-color: #40840c;
+    border: 2px solid #40840c;
+    transform: translateY(-5%);
+    
+}
+
+footer h2, a{
+    font-weight: bold;
+    line-height: 2.0;
+    color: #40840c;
+}
+
+.share-BTN .footer-number{
+    text-decoration: none;
+}
+
+.all-right h5{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+
+/* Tablets & Under  */
+@media(max-width: 768px) {
+    .Welcome img{
+        width: 50%;
+    }
+}
+
+/* Mobiles */
+
+@media(max-width: 500px) {
+    .top-bar .grid, .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 3px;
+    }
+
+    .top-bar li{
+        text-align: center;
+
+    }
+
+    .top-icon{
+        justify-self: center;
+    }
+
+    .Welcome img{
+        width: 50%;
+    }
+
+    footer .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        display: inline;
+        text-align: center;
+    }
+
+    footer h2{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    footer a{
+        line-height: 3;
+    }
+
+    footer .all-right h5{
+        display: flex;
+        text-align: center;
+    }
+}
